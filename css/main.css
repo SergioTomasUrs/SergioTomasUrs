@@ -1,0 +1,184 @@
+html {
+    font-size: 16px;
+    font-family: "Viga", Sigmar One, Verdana, sans-serif, cursive;
+}
+h3 {
+    text-shadow: -1px -1px 1px #aaa, 
+        0px 4px 1px rgba(0,0,0,0.5), 
+        4px 4px 5px rgba(0,0,0,0.7), 
+        0px 0px 7px rgba(0,0,0,0.4);
+    font-family: 'Algerian';
+    font-size: 30px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff;
+}
+
+body {
+    background-image: url("../Imagenes/fondo1.jpg");
+}
+
+header {
+    width: 100%;
+}
+
+.footer {
+    height: 6rem;
+    background-color: #000
+}
+
+figure {
+    position: absolute;
+    margin-top: -23px;
+    margin-left: 150px
+}
+p.seleccion-test {
+    font-size: 12px;
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align:center;
+}
+
+    p.seleccion-test::-moz-selection {
+        color: red;
+        background-color: #0000ff;
+        text-shadow: 1px 2px 1px #fff;
+       
+    }
+
+.navegacion {
+    width: 1000px;
+    height: 60px;
+    margin: 30px auto;
+    background: #000000;
+}
+
+    .navegacion ul {
+        list-style: none;
+    }
+
+.menu > li {
+    position: relative;
+    display: inline-block;
+}
+
+    .menu > li > a {
+        display: block;
+        padding: 15px 20px;
+        color: #fff;
+        font-family: 'Algerian';
+        text-decoration: none;
+    }
+
+.menu li a:hover {
+    color: #ff0800;
+    transition: all .3s;
+}
+
+/* Submenu*/
+
+.submenu {
+    position: absolute;
+    background: #333333;
+    width: 120%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+    .submenu li a {
+        display: block;
+        padding: 15px;
+        color: #fff;
+        font-family: 'Algerian';
+        text-decoration: none;
+    }
+
+.menu li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.container {
+    max-width: 450px;
+    height: auto;
+    background-color: #000000;
+    margin: 5% auto;
+    padding-bottom: 1rem;
+}
+
+.form__top {
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0 1rem;
+    border-top: solid .4rem #ff0800;
+    margin-bottom: 1rem;
+}
+
+    .form__top h2 {
+        font-weight: bold;
+        color: #fff;
+        font-size: 18px;
+    }
+
+h2 span {
+    color: #ff0800;
+}
+
+.form__reg {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.btn__form {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.input, .btn__submit, .btn__reset {
+    background-color: #0000;
+    padding: .5rem;
+    margin: .5rem 0;
+    border: none;
+    border-bottom: solid #fff .2rem;
+    transition: all .5s;
+    
+}
+
+    .input:focus {
+        border-bottom: solid #ff0800 .2rem;
+      
+    }
+
+.btn__submit, .btn__reset {
+    width: 40%;
+    border-bottom: none;
+    background-color: #0f9900;
+    color: white;
+    font-family: 'Viga' 
+    
+}
+
+.btn__reset {
+    background-color: #ff0800;
+}
+
+.btn__submit:hover {
+    background-color: #0f9900;
+}
+
+.btn__reset:hover {
+    background-color: #ff0800;
+}
